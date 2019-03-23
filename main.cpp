@@ -18,7 +18,7 @@ void First()
     }
     catch (my_exception *exception)
     {
-		THROW(1, exception, " first reason ");
+	THROW(1, exception, " first reason ");
     }
 }
 
@@ -30,7 +30,7 @@ void Second()
     }
     catch (my_exception *exception)
     {
-		THROW(1, exception, " second reason ");
+	THROW(1, exception, " second reason ");
     }
 }
 
@@ -41,9 +41,9 @@ void Third()
     {
         Last();
     }
-    catch (my_exception *exception)
+    catch(my_exception *exception)
     {
-		THROW(1, exception, " third reason ");
+	THROW(1, exception, " third reason ");
     }
 }
 
